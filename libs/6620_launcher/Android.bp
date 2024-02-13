@@ -1,0 +1,10 @@
+cc_binary {
+    name: "6620_launcher",
+    srcs: ["stp_uart_launcher.c"],
+    shared_libs: [
+	"libcutils",
+	"liblog"
+    ],
+    init_rc: ["6620_launcher.rc"],
+    proprietary: true,
+}
